@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudySync - Timer App</title>
+  <link rel="stylesheet" href="prodapp.css">
+</head>
+<body>
+<div id="prodapp">
+  <h1>⏳ Study</h1>
+  <div id="timer">25:00</div>
+
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+  <button onclick="resetTimer()">Reset</button>
+  <button onclick="toggleDarkMode()">🌙 Toggle Mode</button>
+
+  <br><br>
+  <input type="file" accept="audio/*" onchange="playMusic(event)">
+  <audio id="music" controls></audio>
+
+  <div id="quote" style="margin-top: 30px; font-style: italic;"></div>
+
+  <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+</div>
+  <script src="prodapp.js"></script>
+</body>
+</html>
